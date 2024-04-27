@@ -1,0 +1,45 @@
+int main() {
+    int N;
+    cin >> N;
+
+    vector<string> kata(N);
+    for (int i = 0; i < N; ++i) {
+        cin >> kata[i];
+    }
+
+    vector<string> matriks = {	
+    "AAFLKHPFSSUFICICLESGNNH",
+		"SFVREOMRWLRTTSXOQONAQAO",
+		"QEIAIFXAEIRFVFYSXIMINJI",
+		"WSTRLGOCAPBIAFIWIWTUACM",
+		"FEYAEAISTPCRLUJKOAKCERS",
+		"RVDAKPNDEEHDEMSNCKKFOAH",
+		"MRNEDSLCRRIWNRSAAFITMMI",
+		"YAAECIEAHYMOTAVHRSSTISB",
+		"RJSEWELCCENNIETOHWSGLSE",
+		"ATANYYMOIEESNESIOIRELTR",
+		"UTENEWEBHMYBETNNRAIEBEN",
+		"RCLKUTEAEQJLSGSHTGDSKOA",
+		"BHOICATNRRSDDECEHOOLGIT",
+		"ENSLUARIRSETALOCOHCTOHE",
+		"FZFUDQJYMADOYIWYGLOVESU",
+		"TEKALFWONSNAEBMIEJTZNTG",
+		"ESWPOSJXEUTUYOZUWAKEZHM",
+		"KZUHBPEZEERFLMSNOWBALLH",
+		"NSNOWBOARDYTVWYCLEVOHSA",
+		"ACOCRQLGZIYCHODRAZZILBI",
+		"LBVKKWANZAAQINWOLPWONSL",
+		"BFREEZINGRAINSLILGTMELT",
+		"HQPYLWHFMNFFUFPSWXNUMMV"
+    };
+
+    for (const string& kata : kata) {
+        if (cariKata(matriks, kata)) {
+            cout << "Ada" << endl;
+        } else {
+            cout << "Tidak Ada" << endl;
+        }
+    }
+
+    return 0;
+}
